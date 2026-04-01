@@ -262,4 +262,4 @@ USER node
 HEALTHCHECK --interval=3m --timeout=10s --start-period=15s --retries=3 \
   CMD sh -lc 'node -e "fetch(`http://127.0.0.1:${PORT:-8080}/healthz`).then((r)=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"'
 
-CMD ["sh", "-lc", "node openclaw.mjs gateway --bind lan --port ${PORT:-8080}"]
+CMD ["sh", "-lc", "node openclaw.mjs gateway --port ${PORT:-8080}"]
