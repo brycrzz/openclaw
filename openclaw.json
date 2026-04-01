@@ -1,0 +1,16 @@
+{
+  "gateway": {
+    "mode": "local",
+    "bind": "lan",
+    "port": 8080,
+    "controlUi": {
+      "allowedOrigins": [
+        "https://jarvisss.up.railway.app"
+      ]
+    }
+  },
+  "agent": {
+    "workspace": "/home/node/.openclaw/workspace",
+    "skipBootstrap": true
+  }
+}
